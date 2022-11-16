@@ -1,0 +1,26 @@
+li {
+  background-color: var(--color-grey-1);
+  padding: 10px 13px 15px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: var(--border-radius-2);
+  border-left: 4px solid var(--color-grey-2);
+  /* border-left: 4px solid var(--color-secondary); */
+}
+
+.summary li > div > div {
+  transform: translateY(8px);
+  gap: 60px;
+}
+
+.summary ul > li > div > div > button {
+  background-image: url("../../assets/trash.svg");
+  width: 22px;
+  height: 22px;
+  border-radius: unset;
+}
+
+.summary li > div > div button:hover {
+  background-image: url("../../assets/trash2.svg");
+}
