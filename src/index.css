@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-grey-4);
+  font-family: var(--font-family-2);
+}
+
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #fd377e;
+  --color-primary-2: #e34981;
+  --color-secondary: #03b898;
+  --color-white: #ffffff;
+  --color-grey-1: #f8f9fa;
+  --color-grey-2: #e9ecef;
+  --color-grey-3: #868e96;
+  --color-grey-4: #212529;
+
+  --font-title-1: 38px;
+  --font-title-2: 24px;
+  --font-title-3: 20px;
+  --font-title-4: 12px;
+  --font-headline: 16px;
+  --font-body: 12px;
+
+  --font-weight-1: 700;
+  --font-weight-2: 400;
+
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "Nunito", sans-serif;
+
+  --border-radius-1: 8px;
+}
+
+.font-title-1 {
+  font-size: var(--font-title-1);
+  font-weight: var(--font-weight-1);
+}
+
+.font-title-2 {
+  font-size: var(--font-title-2);
+  font-weight: var(--font-weight-1);
+}
+
+.font-title-3 {
+  font-size: var(--font-title-3);
+  font-weight: var(--font-weight-1);
+}
+
+.font-title-4 {
+  font-size: var(--font-title-4);
+  font-weight: var(--font-weight-1);
+}
+
+.font-headline {
+  font-size: var(--font-headline);
+  font-weight: var(--font-weight-2);
+  color: var(--color-grey-3);
+}
+
+.font-body {
+  font-size: var(--font-body);
+  font-weight: var(--font-weight-2);
+  color: var(--color-grey-3);
+}
+
+.container {
+  margin: 0 auto;
+  width: 983px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: var(--border-radius-1);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-big {
+  padding: 13px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-family-1);
+  font-weight: var(--font-weight-2);
+}
+
+.button-big:hover {
+  background-color: var(--color-primary-2);
+  color: var(--color-grey-1);
+}
+
+.button-small {
+  padding: 15px;
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-3);
+  font-family: var(--font-family-2);
+}
+
+.button-small:hover {
+  background-color: var(--color-grey-3);
+  color: var(--color-grey-1);
+}
+
+.button-small-selected {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

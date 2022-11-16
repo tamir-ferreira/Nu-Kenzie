@@ -1,0 +1,33 @@
+#root {
+  /* max-width: 988px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.index {
+  background-color: var(--color-grey-4);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.left-container {
+  width: 347px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.left-container button {
+  width: 242px;
+}
+
+.left-container h2,
+.left-container p {
+  color: white;
+}
