@@ -2,15 +2,32 @@ import { useState } from "react";
 import logo from "./assets/logo.svg";
 import logo2 from "./assets/logo2.svg";
 import illustration from "./assets/illustration.svg";
-import empty from "./assets/empty.svg";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Form } from "./components/Form";
 import { TotalMoney } from "./components/TotalMoney";
 import { Card } from "./components/Card";
+import { List } from "./components/List";
+import { Summary } from "./components/Summary";
 
 export const App = () => {
   const [initial, setInitial] = useState(true);
+  const [listTransactions, setListTransactions] = useState([
+    /* { description: "Salário recebido", type: "entrada", value: 2500 },
+    { description: "Conta de luz", type: "saída", value: -150 }, */
+  ]);
+
+  const addTransaction = (newTransaction) => {
+    setListTransactions([...listTransactions, newTransaction]);
+    // console.log(listTransactions);
+  };
+
+  const handTransaction = (removeTransaction) => {
+    const filtered = listTransactions.filter(
+      (transaction) => transaction != removeTransaction
+    );
+    setListTransactions(filtered);
+  };
 
   return initial ? (
     <div className="App">
@@ -33,30 +50,19 @@ export const App = () => {
       <Header logo={logo2} setInitial={setInitial} />
       <main className="home">
         <section>
-          <Form />
-          <TotalMoney />
+          <Form
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+            addTransaction={addTransaction}
+          />
+          <TotalMoney listTransactions={listTransactions} />
         </section>
         <section className="summary">
-          <div>
-            <h3 className="font-title-3">Resumo financeiro</h3>
-            <div>
-              <button className="button-small button-selected">Todos</button>
-              <button className="button-small">Entradas</button>
-              <button className="button-small">Despesas</button>
-            </div>
-          </div>
-          <div className="empty-list">
-            <h2 className="font-title-2">
-              Você ainda não possui nenhum lançamento
-            </h2>
-            <img src={empty} alt="imagem de lista vazia" />
-            <img src={empty} alt="imagem de lista vazia" />
-            <img src={empty} alt="imagem de lista vazia" />
-          </div>
-          <ul>
-            <Card />
-            <Card />
-          </ul>
+          <Summary />
+          <List
+            listTransactions={listTransactions}
+            handTransaction={handTransaction}
+          />
         </section>
       </main>
     </div>

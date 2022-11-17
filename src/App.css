@@ -28,7 +28,6 @@
 .home {
   display: flex;
   flex-direction: row;
-  /* width: 560px; */
   margin: 0 auto;
   width: 983px;
   justify-content: space-between;
@@ -36,38 +35,6 @@
 
 .home > section {
   margin-top: 40px;
-}
-
-.summary {
-  width: 560px;
-  /* border: 1px solid green; */
-}
-
-.summary div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-}
-
-.summary .empty-list {
-  margin-top: 27px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 25px;
-  display: none;
-}
-
-.summary .empty-list > img {
-  width: 100%;
-}
-
-ul {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -82,7 +49,6 @@ ul {
   }
   .left-container {
     width: 100%;
-    /* justify-content: center; */
     align-items: center;
     gap: 25px;
     text-align: center;
@@ -106,33 +72,14 @@ ul {
     width: 90%;
   }
 
-  .summary {
-    width: 100%;
-    /* padding: 0 15px; */
-  }
-
-  .summary > div {
-    flex-direction: column;
-    width: 100%;
-    /* padding: 0 15px; */
-  }
-
   .home {
     width: 100%;
     flex-direction: column;
     padding: 0 15px;
   }
 
-  .home > section > form {
-    width: 100%;
-  }
-
+  .home > section > form,
   .home .total-money {
     width: 100%;
-  }
-
-  .empty-list > h2 {
-    text-align: center;
-    font-size: var(--font-title-3);
   }
 }

@@ -1,7 +1,7 @@
 <svg width="570" height="97" viewBox="0 0 570 97" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_18004_153)">
 <rect x="4" width="562" height="87.3519" rx="4" fill="#F8F9FA"/>
-<path d="M4 4C4 1.79087 5.80515 0 8.01429 0V0V87.3519V87.3519C5.80515 87.3519 4 85.561 4 83.3519V4Z" fill="#E9ECEF"/>
+<path d="M4 4C4 1.79087 5.80515 0 8.01429 0V87.3519C5.80515 87.3519 4 85.561 4 83.3519V4Z" fill="#E9ECEF"/>
 <path d="M523.85 0H562C564.209 0 566 1.79086 566 4V85C566 87.2091 564.209 89 562 89H523.85V0Z" fill="#F8F9FA"/>
 <rect x="19.0535" y="24.7222" width="330.175" height="13.1852" fill="#E9ECEF"/>
 <rect x="19.0535" y="51.0925" width="76.2714" height="13.1852" fill="#E9ECEF"/>

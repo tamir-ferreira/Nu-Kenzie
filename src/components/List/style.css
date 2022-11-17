@@ -1,0 +1,28 @@
+ul {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.summary .empty-list {
+  margin-top: 27px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.summary .empty-list > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    gap: 8px;
+  }
+  .empty-list > h2 {
+    text-align: center;
+    font-size: var(--font-title-3);
+  }
+}
