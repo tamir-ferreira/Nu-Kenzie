@@ -1,0 +1,24 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 983px;
+  justify-content: space-between;
+}
+
+.dashboard > section {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .dashboard > section > form,
+  .dashboard .total-money {
+    width: 100%;
+  }
+}

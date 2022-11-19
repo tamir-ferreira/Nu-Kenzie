@@ -10,7 +10,7 @@ export const Form = ({
     const [...targets] = event.target;
     targets.map((target) => {
       if (target.localName == "input" || target.localName == "select") {
-        transaction[target.name] = target.value;
+        transaction[target.id] = target.value;
         target.value = "";
       }
     });
@@ -36,11 +36,11 @@ export const Form = ({
       }}
     >
       <div>
-        <label className="font-caption" htmlFor="">
+        <label className="font-caption" htmlFor="description">
           Descrição
         </label>
         <input
-          name="description"
+          id="description"
           type="text"
           placeholder="Digite aqui sua descrição"
           required
@@ -50,25 +50,26 @@ export const Form = ({
       <div>
         <div>
           <div>
-            <label className="font-caption" htmlFor="">
+            <label className="font-caption" htmlFor="value">
               Valor
             </label>
-            <label className="font-caption currency">
-              <input name="value" type="text" required />
-            </label>
+            <input id="value" type="number" step="0.01" required />
+            <label className="font-caption currency"></label>
           </div>
           <div>
-            <label className="font-caption" htmlFor="">
+            <label className="font-caption" htmlFor="type">
               Tipo do Valor
             </label>
-            <select name="type" required>
+            <select id="type" required>
               <option value="entrada">Entrada</option>
               <option value="saida">Despesa</option>
             </select>
           </div>
         </div>
       </div>
-      <button className="button-big">Inserir valor</button>
+      <button type="submit" className="button-big">
+        Inserir valor
+      </button>
     </form>
   );
 };

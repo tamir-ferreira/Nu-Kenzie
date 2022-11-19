@@ -1,11 +1,11 @@
 import "./style.css";
 
-export const Header = ({ logo, setInitial }) => {
+export const Header = ({ logo, setInitialPage }) => {
   return (
     <header>
       <div>
         <img src={logo} alt="" />
-        <button className="button-small" onClick={() => setInitial(true)}>
+        <button className="button-small" onClick={() => setInitialPage(true)}>
           Início
         </button>
       </div>

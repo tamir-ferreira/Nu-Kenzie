@@ -25,24 +25,7 @@
   color: white;
 }
 
-.home {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 983px;
-  justify-content: space-between;
-}
-
-.home > section {
-  margin-top: 40px;
-}
-
 @media only screen and (max-width: 600px) {
-  body {
-    min-height: 100vh;
-    width: 100%;
-  }
-
   .index {
     flex-direction: column-reverse;
     gap: 0px;
@@ -70,16 +53,5 @@
 
   .left-container > button {
     width: 90%;
-  }
-
-  .home {
-    width: 100%;
-    flex-direction: column;
-    padding: 0 15px;
-  }
-
-  .home > section > form,
-  .home .total-money {
-    width: 100%;
   }
 }

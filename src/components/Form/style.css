@@ -23,20 +23,39 @@ form > div > div > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 
 .currency {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: relative;
+}
+
+.currency:hover {
+  cursor: text;
 }
 
 .currency::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 20px;
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 15px;
+  top: 40px;
   content: "R$";
+  background-color: var(--color-grey-1);
+  /* background-color: red; */
+}
+
+#value:focus + .currency::after {
+  background-color: var(--color-white);
+}
+
+label:hover {
+  cursor: pointer;
 }
 
 input,

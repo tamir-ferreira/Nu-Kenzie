@@ -1,19 +1,21 @@
 import "./style.css";
 
 export const TotalMoney = ({ listTransactions }) => {
-  // console.log(listTransactions);
-  let total = "0,00";
+  let formatedTotal = "R$ 0,00";
   if (listTransactions != "") {
-    total = listTransactions.reduce((acc, atual) => {
+    const total = listTransactions.reduce((acc, atual) => {
       return acc + atual.value;
     }, 0);
-    console.log(total);
+    formatedTotal = total.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
   }
   return (
     <div className="total-money">
       <div>
         <h3 className="font-title-3">Valor total:</h3>
-        <span className="font-title-3">{`$ ${total}`} </span>
+        <span className="font-title-3">{formatedTotal} </span>
       </div>
       <p className="font-body">O valor se refere ao saldo</p>
     </div>
