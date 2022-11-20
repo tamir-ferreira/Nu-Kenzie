@@ -9,7 +9,7 @@ button:hover {
 }
 
 .button-big {
-  padding: 13px 20px;
+  padding: 0.8125rem 1.25rem;
   background-color: var(--color-primary);
   color: var(--color-white);
   font-family: var(--font-family-1);
@@ -22,8 +22,8 @@ button:hover {
 }
 
 .button-small {
-  height: 40px;
-  padding: 0 15px;
+  height: 2.5rem;
+  padding: 0 0.9375rem;
   background-color: var(--color-grey-2);
   color: var(--color-grey-3);
   font-family: var(--font-family-2);
@@ -49,16 +49,16 @@ button:hover {
     transform: translate(0);
   }
   20% {
-    transform: translate(-2px, 2px);
+    transform: translate(-0.125rem, 0.125rem);
   }
   40% {
-    transform: translate(-2px, -2px);
+    transform: translate(-0.125rem, -0.125rem);
   }
   60% {
-    transform: translate(2px, 2px);
+    transform: translate(0.125rem, 0.125rem);
   }
   80% {
-    transform: translate(2px, -2px);
+    transform: translate(0.125rem, -0.125rem);
   }
   100% {
     transform: translate(0);

@@ -1,31 +1,30 @@
 ul {
-  padding-top: 15px;
-  padding-right: 5px;
-  margin-top: 30px;
+  padding-top: 0.9375rem;
+  padding-right: 0.3125rem;
+  margin-top: 1.875rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
   height: 50vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 .summary .empty-list {
-  margin-top: 27px;
+  margin-top: 1.6875rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5rem) {
   ul {
     height: 100%;
-    gap: 8px;
-    /* overflow-y: none; */
+    gap: 0.5rem;
   }
   .summary .empty-list {
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
   }
   .empty-list > h2 {
@@ -41,8 +40,8 @@ ul::-webkit-scrollbar-track {
   background-color: var(--color-grey-2);
 }
 ul::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 0.4375rem;
+  height: 0.4375rem;
 }
 ul::-webkit-scrollbar-thumb {
   background: var(--color-primary);

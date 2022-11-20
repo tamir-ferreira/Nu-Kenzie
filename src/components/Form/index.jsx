@@ -1,10 +1,6 @@
 import "./style.css";
 
-export const Form = ({
-  /*   listTransaction,
-  setListTransactions, */
-  addTransaction,
-}) => {
+export const Form = ({ addTransaction }) => {
   const captureData = (event) => {
     const transaction = {};
     const [...targets] = event.target;
@@ -14,17 +10,10 @@ export const Form = ({
         target.value = "";
       }
     });
-    // console.log(transaction);
-
-    // let { type, value } = transaction;
-    if (transaction.type == "entrada") {
+    if (transaction.type == "entrada")
       transaction.value = Number(transaction.value);
-    } else {
-      transaction.value = Number(transaction.value) * -1;
-    }
+    else transaction.value = Number(transaction.value) * -1;
 
-    // transaction.value = Number(transaction.value);
-    // console.log(transaction);
     addTransaction(transaction);
   };
 

@@ -3,9 +3,7 @@ import "./style.css";
 export const TotalMoney = ({ listTransactions }) => {
   let formatedTotal = "R$ 0,00";
   if (listTransactions != "") {
-    const total = listTransactions.reduce((acc, atual) => {
-      return acc + atual.value;
-    }, 0);
+    const total = listTransactions.reduce((acc, atual) => acc + atual.value, 0);
     formatedTotal = total.toLocaleString("pt-br", {
       style: "currency",
       currency: "BRL",

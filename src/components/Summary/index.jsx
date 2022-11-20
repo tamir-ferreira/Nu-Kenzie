@@ -27,31 +27,6 @@ export const Summary = ({ filterType, setFilterType }) => {
         >
           Despesas
         </Button>
-
-        {/* <button
-          className={`button-small ${
-            filterType === "todos" ? "button-selected" : ""
-          }`}
-          onClick={() => setFilterType("todos")}
-        >
-          Todos
-        </button>
-        <button
-          className={`button-small ${
-            filterType === "entrada" ? "button-selected" : ""
-          }`}
-          onClick={() => setFilterType("entrada")}
-        >
-          Entradas
-        </button>
-        <button
-          className={`button-small ${
-            filterType === "saida" ? "button-selected" : ""
-          }`}
-          onClick={() => setFilterType("saida")}
-        >
-          Despesas
-        </button> */}
       </div>
     </div>
   );

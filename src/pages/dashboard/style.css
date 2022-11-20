@@ -2,20 +2,20 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  width: 983px;
+  width: 61.4375rem;
   justify-content: space-between;
   animation: pageIn 0.5s ease-in-out;
 }
 
 .dashboard > section {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5rem) {
   .dashboard {
     width: 100%;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
   }
 
   .dashboard > section > form,
