@@ -1,11 +1,13 @@
 ul {
   padding-top: 15px;
+  padding-right: 5px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 60vh;
+  height: 50vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .summary .empty-list {
@@ -18,7 +20,9 @@ ul {
 
 @media only screen and (max-width: 600px) {
   ul {
+    height: 100%;
     gap: 8px;
+    /* overflow-y: none; */
   }
   .summary .empty-list {
     gap: 10px;

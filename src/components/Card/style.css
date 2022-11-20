@@ -6,6 +6,11 @@ li {
   gap: 15px;
   border-radius: var(--border-radius-2);
   border-left: 4px solid var(--color-grey-2);
+  animation: cardsIn 0.6s ease-in-out;
+}
+
+.empty-list {
+  animation: cardsIn 0.6s ease-in-out;
 }
 
 .entry {
@@ -36,5 +41,14 @@ li:hover {
 @media only screen and (max-width: 600px) {
   .summary li > div > div {
     gap: 10px;
+  }
+}
+
+@keyframes cardsIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

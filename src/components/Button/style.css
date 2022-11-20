@@ -39,3 +39,28 @@ button:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
+
+.attention {
+  animation: btn-animation 0.5s linear 1s infinite both;
+}
+
+@keyframes btn-animation {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

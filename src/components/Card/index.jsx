@@ -7,14 +7,24 @@ export const Card = ({ transaction, handTransaction }) => {
     style: "currency",
     currency: "BRL",
   });
-  console.log(formatedValue);
+
+  const sleep = (milliseconds) => {
+    return new Promise((resolve) => setTimeout(resolve, milliseconds));
+  };
   return (
     <li className={`${type == "entrada" ? "entry" : ""}`}>
       <div>
         <h3 className="font-title-3">{description}</h3>
         <div>
           <span className="font-body">{formatedValue}</span>
-          <button onClick={() => handTransaction(transaction)}></button>
+          <button
+            onClick={(event) => {
+              // event.target.closest("li").style.transform = "translateX(600px)";
+              // sleep(400).then(() => {
+              handTransaction(transaction);
+              // });
+            }}
+          ></button>
         </div>
       </div>
       <span className="font-body">{`${

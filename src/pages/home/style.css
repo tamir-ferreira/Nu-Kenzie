@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
   gap: 48px;
+  /* animation: pageIn 0.5s ease-in-out; */
+  overflow: hidden;
 }
 
 .left-container {
@@ -23,6 +25,10 @@
 .left-container h2,
 .left-container p {
   color: white;
+}
+
+#ilustration {
+  animation: enter-image 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,5 +59,27 @@
 
   .left-container > button {
     width: 90%;
+  }
+}
+
+@keyframes pageIn {
+  /*  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } */
+}
+
+@keyframes enter-image {
+  0% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
   }
 }

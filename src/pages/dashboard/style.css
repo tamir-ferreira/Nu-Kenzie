@@ -4,6 +4,7 @@
   margin: 0 auto;
   width: 983px;
   justify-content: space-between;
+  animation: pageIn 0.5s ease-in-out;
 }
 
 .dashboard > section {
@@ -20,5 +21,14 @@
   .dashboard > section > form,
   .dashboard .total-money {
     width: 100%;
+  }
+}
+
+@keyframes pageIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
