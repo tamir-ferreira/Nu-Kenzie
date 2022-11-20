@@ -22,6 +22,7 @@ ul {
   ul {
     height: 100%;
     gap: 0.5rem;
+    padding-bottom: 30px;
   }
   .summary .empty-list {
     gap: 0.625rem;
