@@ -1,3 +1,5 @@
+import { Input } from "./Input";
+import { Select } from "./Select";
 import "./style.css";
 
 export const Form = ({ addTransaction }) => {
@@ -28,11 +30,10 @@ export const Form = ({ addTransaction }) => {
         <label className="font-caption" htmlFor="description">
           Descrição
         </label>
-        <input
+        <Input
           id="description"
           type="text"
           placeholder="Digite aqui sua descrição"
-          required
         />
         <p className="font-body">Ex: Compra de roupas</p>
       </div>
@@ -42,17 +43,14 @@ export const Form = ({ addTransaction }) => {
             <label className="font-caption" htmlFor="value">
               Valor
             </label>
-            <input id="value" type="number" step="0.01" required />
+            <Input id="value" type="number" step="0.01" />
             <label className="font-caption currency"></label>
           </div>
           <div>
             <label className="font-caption" htmlFor="type">
               Tipo do Valor
             </label>
-            <select id="type" required>
-              <option value="entrada">Entrada</option>
-              <option value="saida">Despesa</option>
-            </select>
+            <Select />
           </div>
         </div>
       </div>
