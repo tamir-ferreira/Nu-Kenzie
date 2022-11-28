@@ -43,7 +43,7 @@ export const Form = ({ addTransaction }) => {
             <label className="font-caption" htmlFor="value">
               Valor
             </label>
-            <Input id="value" type="number" step="0.01" />
+            <Input id="value" type="number" step="0.01" min="0.01" />
             <label className="font-caption currency"></label>
           </div>
           <div>
